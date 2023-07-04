@@ -1,0 +1,57 @@
+<launch>
+    <!-- Run the architecture's component and allow to test it through a simple keyboard-based interface. -->
+
+     <rosparam param="state/initial_pose"> [3.5,  1.0] </rosparam> <!-- 'ROOM E' -->
+    <rosparam param="config/environment_size"> [10.0, 10.0] </rosparam>
+      <node pkg="armor" 
+            type="execute" 
+            name="armor_service" 
+            args="it.emarolab.armor.ARMORMainService"
+      > </node>
+
+      <node pkg = "exp_assignment"  
+            type = "robot_states.py" 
+            name = "robot_states"
+            output = "screen"
+      > </node>
+    
+      <node pkg = "exp_assignment"  
+            type = "planner.py"
+            name = "planner"
+            output = "screen"
+      > </node>
+    
+      <node pkg = "exp_assignment"  
+            type = "controller.py"
+            name = "controller"
+            output = "screen"
+      > </node>
+
+      <node pkg = "exp_assignment"  
+            type = "finite_state_machine.py"
+            name = "finite_state_machine"
+            launch-prefix = "konsole -e"
+            output = "screen"
+      > </node>
+
+      <node pkg = "exp_assignment"  
+            type = "planner_client.py"
+            name = "planner_client"
+            launch-prefix = "konsole -e"
+            output = "screen"
+      > </node>
+
+      <node pkg = "exp_assignment"  
+            type = "controller_client.py"
+            name = "controller_client"
+            launch-prefix = "konsole -e"
+            output = "screen"
+      > </node>
+
+      <node pkg = "smach_viewer"  
+            type = "smach_viewer.py"
+            name = "smach_viewer"
+            output = "screen"
+      > </node>
+
+</launch>
