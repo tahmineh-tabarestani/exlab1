@@ -1,4 +1,8 @@
 # exlab1
+![200863752-0da59da4-dac3-4031-a93c-6fab05ed9516](https://github.com/tahmineh-tabarestani/exlab1/assets/80887743/aad21862-901c-4470-bb65-c9e07e01fc36)
+
+
+
 #Introduction:
 The concept behind this project involves the development of a robot capable of moving between different locations. However, as it moves, it consumes its battery power and necessitates returning to its initial location for recharging. In order to ensure that the robot visits all locations, it is crucial to record the time it takes to travel from one location to another.
 
