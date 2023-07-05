@@ -89,7 +89,7 @@ To create your own repository and set up the necessary environment, follow these
 
 2. Fork the package from the desired repository:
    ```
-   $ git clone https://github.com/mrhosseini75/tmrc.git
+   $ git clone https://github.com/tahmineh-tabarestani/exlab1
    ```
 
 3. Go back to the root of the workspace:
