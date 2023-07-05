@@ -19,7 +19,8 @@ Arch_skeleton: This tool proved instrumental in constructing a plan that facilit
 SMACH viewer: To monitor the status of the robot, I utilized the SMACH viewer, which provides a visual representation of the robot's actions and progress.
 
 
-# Software architecture:![uml assignment1a drawio](https://github.com/tahmineh-tabarestani/exlab1/assets/80887743/2e41ab94-34a6-4dcf-b38c-d9fce24e1506)
+# Software architecture:
+![uml assignment1a drawio (1)](https://github.com/tahmineh-tabarestani/exlab1/assets/80887743/9575b9d6-320a-4406-b827-b6cba537d587)
 
 
 Robot State Node:
