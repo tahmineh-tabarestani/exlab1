@@ -15,7 +15,7 @@ Arch_skeleton: This tool proved instrumental in constructing a plan that facilit
 SMACH viewer: To monitor the status of the robot, I utilized the SMACH viewer, which provides a visual representation of the robot's actions and progress.
 
 
-# Reimagined Explanation:
+# Explanation:
 
 Robot State Node:
 
