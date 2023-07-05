@@ -19,7 +19,7 @@ Arch_skeleton: This tool proved instrumental in constructing a plan that facilit
 SMACH viewer: To monitor the status of the robot, I utilized the SMACH viewer, which provides a visual representation of the robot's actions and progress.
 
 
-# Software architecture:
+## Software architecture:
 ![uml assignment1a drawio (1)](https://github.com/tahmineh-tabarestani/exlab1/assets/80887743/9575b9d6-320a-4406-b827-b6cba537d587)
 
 
@@ -50,7 +50,7 @@ Architecture Name Mapper: Each node within the aRMOR package is assigned a uniqu
 Finite State Machine:
 
 Within this node, various functions and operations are defined. It serves as the core component responsible for managing the robot's state and behavior. Additionally, it provides a graphical user interface (GUI) known as the SMACH viewer, which allows for real-time visualization and monitoring of the robot's status
-#rqt graph!
+##rqt graph!
 
 ![201729229-b924a3cf-628f-4e8b-bee4-66fa636f2aea](https://github.com/tahmineh-tabarestani/exlab1/assets/80887743/cfad2d4f-9d41-44db-b3d5-300c5bdbd847)
 
@@ -106,6 +106,7 @@ With these steps, you have created your ROS workspace, added the desired package
 Now you can launch program:
 $ roslaunch tmrc topological_map_robot_control
 #Hypothesis and environment
+![map](https://github.com/tahmineh-tabarestani/exlab1/assets/80887743/f5e24a0e-5137-4caa-bb98-66efc01d6a5f)
 System's Features:
 
 The final environment is designed with a map size of 10x10, containing seven distinct points representing different locations. The planner node utilizes these points to generate a path, denoted as /path, guiding the robot's movement.
