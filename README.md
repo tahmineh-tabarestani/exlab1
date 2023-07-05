@@ -50,9 +50,9 @@ Architecture Name Mapper: Each node within the aRMOR package is assigned a uniqu
 Finite State Machine:
 
 Within this node, various functions and operations are defined. It serves as the core component responsible for managing the robot's state and behavior. Additionally, it provides a graphical user interface (GUI) known as the SMACH viewer, which allows for real-time visualization and monitoring of the robot's status
-#rqt graph![temp drawio (1)
-![201729229-b924a3cf-628f-4e8b-bee4-66fa636f2aea](https://github.com/tahmineh-tabarestani/exlab1/assets/80887743/a5229cb4-1f28-4c54-9b6e-cccf37baba6d)
+#rqt graph!
 
+![201729229-b924a3cf-628f-4e8b-bee4-66fa636f2aea](https://github.com/tahmineh-tabarestani/exlab1/assets/80887743/cfad2d4f-9d41-44db-b3d5-300c5bdbd847)
 
 
 The finite_state_machine node takes charge of managing the robot's movements by identifying and prioritizing the rooms that haven't been visited for a significant period of time. It compiles a list of these rooms and selects the first room as the target point. The node then sends a post message to the /motion/planner node, providing the target point information.
@@ -64,7 +64,8 @@ Upon receiving the path, the controller node takes over the task of maneuvering 
 As the robot progresses towards the target room, the finite_state_machine node remains active and continuously updates the /smach_viewer. This ensures that the viewer provides real-time information and visual representation of the robot's current status.
 
 To facilitate communication between the nodes, the GET_POSE and SET_POSE services defined in the /robot_state node are utilized. These services enable the exchange of messages and data related to the robot's position and pose between the nodes, ensuring smooth coordination and synchronization throughout the system.
-#Temporal diagram![temp drawio](https://github.com/tahmineh-tabarestani/exlab1/assets/80887743/2a448c16-77ff-44cb-ae0a-8ec1f1dd992a)
+#Temporal diagram![tempa drawio](https://github.com/tahmineh-tabarestani/exlab1/assets/80887743/9fcf3afc-571f-4eb3-8391-e6e8ccc16d51)
+
 
 The topological_map_robot_control.launch launch file initiates the system by starting six nodes and one armor service. This service directly interacts with the FSM (Finite State Machine) node and the topological_map.owl map. It enables the FSM node to make modifications, perform checks, and load the topological_map.owl map.
 
