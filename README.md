@@ -50,7 +50,8 @@ Architecture Name Mapper: Each node within the aRMOR package is assigned a uniqu
 Finite State Machine:
 
 Within this node, various functions and operations are defined. It serves as the core component responsible for managing the robot's state and behavior. Additionally, it provides a graphical user interface (GUI) known as the SMACH viewer, which allows for real-time visualization and monitoring of the robot's status
-#rqt graph![temp drawio (1)](https://github.com/tahmineh-tabarestani/exlab1/assets/80887743/ce169b5e-4c9b-48c9-9c55-8519c83f7890)
+#rqt graph![temp drawio (1)
+![201729229-b924a3cf-628f-4e8b-bee4-66fa636f2aea](https://github.com/tahmineh-tabarestani/exlab1/assets/80887743/a5229cb4-1f28-4c54-9b6e-cccf37baba6d)
 
 
 
