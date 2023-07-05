@@ -3,10 +3,10 @@
 
 
 
-#Introduction:
+##Introduction:
 The concept behind this project involves the development of a robot capable of moving between different locations. However, as it moves, it consumes its battery power and necessitates returning to its initial location for recharging. In order to ensure that the robot visits all locations, it is crucial to record the time it takes to travel from one location to another.
 
-Alternate Tools:
+##Alternate Tools:
 
 In order to tackle this problem, I employed a variety of tools, including:
 
@@ -64,7 +64,8 @@ Upon receiving the path, the controller node takes over the task of maneuvering 
 As the robot progresses towards the target room, the finite_state_machine node remains active and continuously updates the /smach_viewer. This ensures that the viewer provides real-time information and visual representation of the robot's current status.
 
 To facilitate communication between the nodes, the GET_POSE and SET_POSE services defined in the /robot_state node are utilized. These services enable the exchange of messages and data related to the robot's position and pose between the nodes, ensuring smooth coordination and synchronization throughout the system.
-#Temporal diagram![tempa drawio](https://github.com/tahmineh-tabarestani/exlab1/assets/80887743/9fcf3afc-571f-4eb3-8391-e6e8ccc16d51)
+##Temporal diagram
+![tempa drawio](https://github.com/tahmineh-tabarestani/exlab1/assets/80887743/9fcf3afc-571f-4eb3-8391-e6e8ccc16d51)
 
 
 The topological_map_robot_control.launch launch file initiates the system by starting six nodes and one armor service. This service directly interacts with the FSM (Finite State Machine) node and the topological_map.owl map. It enables the FSM node to make modifications, perform checks, and load the topological_map.owl map.
@@ -75,7 +76,7 @@ The FSM node publishes the \target_point message to the planner_client node. The
 
 The nodes, such as the MOTION PLANNER and MOTION CONTROLLER, work in pairs and establish communication with each other through the SimpleAction protocol. In this setup, the first node acts as the server, while the second node functions as the client. The client node establishes a connection with the server using a CALLBACK mechanism, allowing them to exchange data and instructions. The server, on the other hand, utilizes the FEEDBACK mechanism to monitor and control the status of the client during the execution of tasks
 
-#usage
+##usage
 
 To create your own repository and set up the necessary environment, follow these steps:
 
