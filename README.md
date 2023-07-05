@@ -63,7 +63,8 @@ Upon receiving the path, the controller node takes over the task of maneuvering 
 As the robot progresses towards the target room, the finite_state_machine node remains active and continuously updates the /smach_viewer. This ensures that the viewer provides real-time information and visual representation of the robot's current status.
 
 To facilitate communication between the nodes, the GET_POSE and SET_POSE services defined in the /robot_state node are utilized. These services enable the exchange of messages and data related to the robot's position and pose between the nodes, ensuring smooth coordination and synchronization throughout the system.
-#Temporal diagram
+#Temporal diagram![temp drawio](https://github.com/tahmineh-tabarestani/exlab1/assets/80887743/2a448c16-77ff-44cb-ae0a-8ec1f1dd992a)
+
 The topological_map_robot_control.launch launch file initiates the system by starting six nodes and one armor service. This service directly interacts with the FSM (Finite State Machine) node and the topological_map.owl map. It enables the FSM node to make modifications, perform checks, and load the topological_map.owl map.
 
 Additionally, the launch file sets the size of the environment within the planner node and specifies the initial position of the robot in the environment using the controller_client node. Parameters are utilized to assign specific values to these settings.
@@ -71,7 +72,9 @@ Additionally, the launch file sets the size of the environment within the planne
 The FSM node publishes the \target_point message to the planner_client node. The planner_client node then utilizes this information to generate a path that incorporates various points to navigate the robot towards the desired goal. The resulting path is published as the \path message to the controller_client node.
 
 The nodes, such as the MOTION PLANNER and MOTION CONTROLLER, work in pairs and establish communication with each other through the SimpleAction protocol. In this setup, the first node acts as the server, while the second node functions as the client. The client node establishes a connection with the server using a CALLBACK mechanism, allowing them to exchange data and instructions. The server, on the other hand, utilizes the FEEDBACK mechanism to monitor and control the status of the client during the execution of tasks
-#Usage
+
+#usage
+
 To create your own repository and set up the necessary environment, follow these steps:
 
 1. Create a ROS workspace and source folder:
