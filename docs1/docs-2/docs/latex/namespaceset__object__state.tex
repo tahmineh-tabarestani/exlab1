@@ -1,0 +1,79 @@
+\hypertarget{namespaceset__object__state}{}\doxysection{set\+\_\+object\+\_\+state Namespace Reference}
+\label{namespaceset__object__state}\index{set\_object\_state@{set\_object\_state}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespaceset__object__state_afd6d3723dd3cd498742114e4336c28ba}{battery\+\_\+lvl}} (battery\+\_\+level)
+\item 
+def \mbox{\hyperlink{namespaceset__object__state_a82996ca7c660709b73b4e37ed1287d92}{arm\+\_\+movement}} (arm\+\_\+movement\+\_\+state)
+\item 
+def \mbox{\hyperlink{namespaceset__object__state_a511d4d6c6064750d395bed8e27b88364}{base\+\_\+movement}} (base\+\_\+movement\+\_\+state)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespaceset__object__state_a905d735ea443ee4984ed83fd8f2b5d72}\label{namespaceset__object__state_a905d735ea443ee4984ed83fd8f2b5d72}} 
+{\bfseries L\+O\+G\+\_\+\+T\+AG} = anm.\+N\+O\+D\+E\+\_\+\+S\+E\+T\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+S\+T\+A\+TE
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}.. module:: set_object_state
+    :platform: Unix
+    :synopsis: The Set Object State python script in second_assignment package
+
+.. moduleauthor:: Tahmineh Tabarestani <Tahmine.tbi@gmail.com>
+
+Definition:
+
+    Berifly this node has three functions that have been used inside the **smach.state**, the functions are:
+1. *battery_lvl:* Take an instance from battery level 
+2. *arm_movement:* Take an instance from robot manipulator movement
+3. *base_movement:* Take an instance from robot base movement
+
+Services:
+    /state/set_battery_level ---> uses SetBatteryLevel.srv
+
+    /move_arm ---> uses move_arm service defined inside moveit pkg
+
+    /state/set_base_movement_state ---> use SetBaseMovmentSate.srv\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceset__object__state_a82996ca7c660709b73b4e37ed1287d92}\label{namespaceset__object__state_a82996ca7c660709b73b4e37ed1287d92}} 
+\index{set\_object\_state@{set\_object\_state}!arm\_movement@{arm\_movement}}
+\index{arm\_movement@{arm\_movement}!set\_object\_state@{set\_object\_state}}
+\doxysubsubsection{\texorpdfstring{arm\_movement()}{arm\_movement()}}
+{\footnotesize\ttfamily def set\+\_\+object\+\_\+state.\+arm\+\_\+movement (\begin{DoxyParamCaption}\item[{}]{arm\+\_\+movement\+\_\+state }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}    Service client function for ``/move_arm``. Updates the current robot arm movement state stored 
+    in ``my_moveit`` node.
+
+    Args:
+        arm_movement_state(bool)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceset__object__state_a511d4d6c6064750d395bed8e27b88364}\label{namespaceset__object__state_a511d4d6c6064750d395bed8e27b88364}} 
+\index{set\_object\_state@{set\_object\_state}!base\_movement@{base\_movement}}
+\index{base\_movement@{base\_movement}!set\_object\_state@{set\_object\_state}}
+\doxysubsubsection{\texorpdfstring{base\_movement()}{base\_movement()}}
+{\footnotesize\ttfamily def set\+\_\+object\+\_\+state.\+base\+\_\+movement (\begin{DoxyParamCaption}\item[{}]{base\+\_\+movement\+\_\+state }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}    Service client function for ``/base_movement_state``. Updates the current robot base movement state stored 
+    in ``robot_states`` node.
+
+    Args:   
+        base_movement_state(bool)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceset__object__state_afd6d3723dd3cd498742114e4336c28ba}\label{namespaceset__object__state_afd6d3723dd3cd498742114e4336c28ba}} 
+\index{set\_object\_state@{set\_object\_state}!battery\_lvl@{battery\_lvl}}
+\index{battery\_lvl@{battery\_lvl}!set\_object\_state@{set\_object\_state}}
+\doxysubsubsection{\texorpdfstring{battery\_lvl()}{battery\_lvl()}}
+{\footnotesize\ttfamily def set\+\_\+object\+\_\+state.\+battery\+\_\+lvl (\begin{DoxyParamCaption}\item[{}]{battery\+\_\+level }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Service client function for ``/state/set_battery_level`` Update the current robot battery level
+stored in the ``robot_states`` node.
+
+Args:
+    battery_level(int)
+\end{DoxyVerb}
+ 

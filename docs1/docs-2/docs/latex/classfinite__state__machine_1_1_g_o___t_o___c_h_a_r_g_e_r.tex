@@ -1,0 +1,52 @@
+\hypertarget{classfinite__state__machine_1_1_g_o___t_o___c_h_a_r_g_e_r}{}\doxysection{finite\+\_\+state\+\_\+machine.\+G\+O\+\_\+\+T\+O\+\_\+\+C\+H\+A\+R\+G\+ER Class Reference}
+\label{classfinite__state__machine_1_1_g_o___t_o___c_h_a_r_g_e_r}\index{finite\_state\_machine.GO\_TO\_CHARGER@{finite\_state\_machine.GO\_TO\_CHARGER}}
+
+
+Inheritance diagram for finite\+\_\+state\+\_\+machine.\+G\+O\+\_\+\+T\+O\+\_\+\+C\+H\+A\+R\+G\+ER\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{classfinite__state__machine_1_1_g_o___t_o___c_h_a_r_g_e_r__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for finite\+\_\+state\+\_\+machine.\+G\+O\+\_\+\+T\+O\+\_\+\+C\+H\+A\+R\+G\+ER\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{classfinite__state__machine_1_1_g_o___t_o___c_h_a_r_g_e_r__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfinite__state__machine_1_1_g_o___t_o___c_h_a_r_g_e_r_a505ee4124fb2a1fca7b023ce26ec5c7e}\label{classfinite__state__machine_1_1_g_o___t_o___c_h_a_r_g_e_r_a505ee4124fb2a1fca7b023ce26ec5c7e}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+def \mbox{\hyperlink{classfinite__state__machine_1_1_g_o___t_o___c_h_a_r_g_e_r_a759852ec6bd87b9f13267eba1774508d}{execute}} (self, userdata)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This state is triggered as a result of the message received from GO_IN_ROOM state when battery is low.
+In this state *target_position* becomes room *#E* and *update_ontology()* function updated and room #E
+add as a first room in **URGENT CLASS**. if room #E is reached state machine changes to WAIT_FOR_CHARGING.\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfinite__state__machine_1_1_g_o___t_o___c_h_a_r_g_e_r_a759852ec6bd87b9f13267eba1774508d}\label{classfinite__state__machine_1_1_g_o___t_o___c_h_a_r_g_e_r_a759852ec6bd87b9f13267eba1774508d}} 
+\index{finite\_state\_machine.GO\_TO\_CHARGER@{finite\_state\_machine.GO\_TO\_CHARGER}!execute@{execute}}
+\index{execute@{execute}!finite\_state\_machine.GO\_TO\_CHARGER@{finite\_state\_machine.GO\_TO\_CHARGER}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily def finite\+\_\+state\+\_\+machine.\+G\+O\+\_\+\+T\+O\+\_\+\+C\+H\+A\+R\+G\+E\+R.\+execute (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{userdata }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Implements the execution of the tasks while this state gets active.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scripts/finite\+\_\+state\+\_\+machine.\+py\end{DoxyCompactItemize}
