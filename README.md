@@ -62,7 +62,7 @@ The FSM node publishes the \target_point message to the planner_client node. The
 
 The nodes, such as the MOTION PLANNER and MOTION CONTROLLER, work in pairs and establish communication with each other through the SimpleAction protocol. In this setup, the first node acts as the server, while the second node functions as the client. The client node establishes a connection with the server using a CALLBACK mechanism, allowing them to exchange data and instructions. The server, on the other hand, utilizes the FEEDBACK mechanism to monitor and control the status of the client during the execution of tasks
 
-##usage
+## usage
 
 To create your own repository and set up the necessary environment, follow these steps:
 
