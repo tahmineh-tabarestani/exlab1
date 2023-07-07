@@ -1,0 +1,55 @@
+\hypertarget{classfinite__state__machine_1_1_g_o___i_n___r_o_o_m}{}\doxysection{finite\+\_\+state\+\_\+machine.\+G\+O\+\_\+\+I\+N\+\_\+\+R\+O\+OM Class Reference}
+\label{classfinite__state__machine_1_1_g_o___i_n___r_o_o_m}\index{finite\_state\_machine.GO\_IN\_ROOM@{finite\_state\_machine.GO\_IN\_ROOM}}
+
+
+Inheritance diagram for finite\+\_\+state\+\_\+machine.\+G\+O\+\_\+\+I\+N\+\_\+\+R\+O\+OM\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{classfinite__state__machine_1_1_g_o___i_n___r_o_o_m__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for finite\+\_\+state\+\_\+machine.\+G\+O\+\_\+\+I\+N\+\_\+\+R\+O\+OM\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{classfinite__state__machine_1_1_g_o___i_n___r_o_o_m__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfinite__state__machine_1_1_g_o___i_n___r_o_o_m_a578158385a94979ba365e656a847836c}\label{classfinite__state__machine_1_1_g_o___i_n___r_o_o_m_a578158385a94979ba365e656a847836c}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+def \mbox{\hyperlink{classfinite__state__machine_1_1_g_o___i_n___r_o_o_m_a6a934feb9c999bb3638bf78ab7096f86}{execute}} (self, userdata)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}GO_IN_ROOM state is useful for moving the robot between rooms and patrolling in map. This status uses the *update_ontology()*
+function defined in ``build_ontology_map.py`` node to fetch data related to *target_room* and *battery_state* of
+robot ,meanwhile updates the list of time visited rooms. The robot movement is controlled through *base_movement()* 
+function defined in ``set_object_state.py`` node. If robot reached target *base_movemet()* becomes *False* and machine state
+changes to INSPECT_ROOM. During patrolling, in case battery level of the robot is lower than thershold the *target_room* is cancel
+and machine state changes to GO_TO_CHARGER.\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfinite__state__machine_1_1_g_o___i_n___r_o_o_m_a6a934feb9c999bb3638bf78ab7096f86}\label{classfinite__state__machine_1_1_g_o___i_n___r_o_o_m_a6a934feb9c999bb3638bf78ab7096f86}} 
+\index{finite\_state\_machine.GO\_IN\_ROOM@{finite\_state\_machine.GO\_IN\_ROOM}!execute@{execute}}
+\index{execute@{execute}!finite\_state\_machine.GO\_IN\_ROOM@{finite\_state\_machine.GO\_IN\_ROOM}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily def finite\+\_\+state\+\_\+machine.\+G\+O\+\_\+\+I\+N\+\_\+\+R\+O\+O\+M.\+execute (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{userdata }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Implements the execution of the tasks while this state gets active.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scripts/finite\+\_\+state\+\_\+machine.\+py\end{DoxyCompactItemize}

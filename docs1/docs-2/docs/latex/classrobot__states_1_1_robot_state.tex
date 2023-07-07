@@ -1,0 +1,133 @@
+\hypertarget{classrobot__states_1_1_robot_state}{}\doxysection{robot\+\_\+states.\+Robot\+State Class Reference}
+\label{classrobot__states_1_1_robot_state}\index{robot\_states.RobotState@{robot\_states.RobotState}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrobot__states_1_1_robot_state_af915ba84f14daac9b0aaa87cec6e62b2}\label{classrobot__states_1_1_robot_state_af915ba84f14daac9b0aaa87cec6e62b2}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+def \mbox{\hyperlink{classrobot__states_1_1_robot_state_ab77b6ffea0224311a5d2f4ba5a3d348f}{odom\+\_\+callback}} (self, data)
+\item 
+def \mbox{\hyperlink{classrobot__states_1_1_robot_state_a76199309686fac776fe4427a8e549264}{get\+\_\+pose}} (self, request)
+\item 
+def \mbox{\hyperlink{classrobot__states_1_1_robot_state_a9d666c94f6af03d229edecdfa0965746}{set\+\_\+battery\+\_\+level}} (self, request)
+\item 
+def \mbox{\hyperlink{classrobot__states_1_1_robot_state_a0316b600d1220427d72f03c319e3a015}{get\+\_\+battery\+\_\+level}} (self, request)
+\item 
+def \mbox{\hyperlink{classrobot__states_1_1_robot_state_a61dc95746c214504aa967792d6ee13b4}{set\+\_\+base\+\_\+movement\+\_\+state}} (self, request)
+\item 
+def \mbox{\hyperlink{classrobot__states_1_1_robot_state_ac045928829450474bcab6eec5f5cff9b}{get\+\_\+base\+\_\+movement\+\_\+state}} (self, request)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrobot__states_1_1_robot_state_a0894b6337f559998dbcab19f0343f20e}\label{classrobot__states_1_1_robot_state_a0894b6337f559998dbcab19f0343f20e}} 
+{\bfseries \+\_\+pose}
+\item 
+\mbox{\Hypertarget{classrobot__states_1_1_robot_state_a61d1a5d1d85f0b337e75b94b45cd2935}\label{classrobot__states_1_1_robot_state_a61d1a5d1d85f0b337e75b94b45cd2935}} 
+{\bfseries \+\_\+battery\+\_\+level}
+\item 
+\mbox{\Hypertarget{classrobot__states_1_1_robot_state_aaffda2e50d2a708c246789e588f575da}\label{classrobot__states_1_1_robot_state_aaffda2e50d2a708c246789e588f575da}} 
+{\bfseries \+\_\+base\+\_\+movement\+\_\+state}
+\item 
+\mbox{\Hypertarget{classrobot__states_1_1_robot_state_ae667bb31345a5ee189100807a6f9cc0c}\label{classrobot__states_1_1_robot_state_ae667bb31345a5ee189100807a6f9cc0c}} 
+{\bfseries \+\_\+arm\+\_\+movement\+\_\+state}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}    RobotState class has importante rule to get/set various service like ``BATTERY_LEVEL`` , ``BASE_MOVEMENT`` ,and ``GET_POSE``.
+    Additionaly set initiale battery level, robot movement state ,and arm movement.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrobot__states_1_1_robot_state_ac045928829450474bcab6eec5f5cff9b}\label{classrobot__states_1_1_robot_state_ac045928829450474bcab6eec5f5cff9b}} 
+\index{robot\_states.RobotState@{robot\_states.RobotState}!get\_base\_movement\_state@{get\_base\_movement\_state}}
+\index{get\_base\_movement\_state@{get\_base\_movement\_state}!robot\_states.RobotState@{robot\_states.RobotState}}
+\doxysubsubsection{\texorpdfstring{get\_base\_movement\_state()}{get\_base\_movement\_state()}}
+{\footnotesize\ttfamily def robot\+\_\+states.\+Robot\+State.\+get\+\_\+base\+\_\+movement\+\_\+state (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}    The `state/get_base_movement_state` service implementation.
+    The `request` input parameter is given by the client as empty. Thus, it is not used.
+    The `response` returned to the client contains the current robot base movement state.
+
+    Args:
+request(GetBaseMovementStateRequest)
+
+    Returns:
+response(GetBaseMovementStateResponse)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classrobot__states_1_1_robot_state_a0316b600d1220427d72f03c319e3a015}\label{classrobot__states_1_1_robot_state_a0316b600d1220427d72f03c319e3a015}} 
+\index{robot\_states.RobotState@{robot\_states.RobotState}!get\_battery\_level@{get\_battery\_level}}
+\index{get\_battery\_level@{get\_battery\_level}!robot\_states.RobotState@{robot\_states.RobotState}}
+\doxysubsubsection{\texorpdfstring{get\_battery\_level()}{get\_battery\_level()}}
+{\footnotesize\ttfamily def robot\+\_\+states.\+Robot\+State.\+get\+\_\+battery\+\_\+level (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}    The `state/get_battery_level` service implementation.
+    The `request` input parameter is given by the client as empty. Thus, it is not used.
+    The `response` returned to the client contains the current robot battery level.
+
+    Args:
+request(GetBatteryLevelRequest)
+
+    Returns:
+response(GetBatteryLevelResponse)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classrobot__states_1_1_robot_state_a76199309686fac776fe4427a8e549264}\label{classrobot__states_1_1_robot_state_a76199309686fac776fe4427a8e549264}} 
+\index{robot\_states.RobotState@{robot\_states.RobotState}!get\_pose@{get\_pose}}
+\index{get\_pose@{get\_pose}!robot\_states.RobotState@{robot\_states.RobotState}}
+\doxysubsubsection{\texorpdfstring{get\_pose()}{get\_pose()}}
+{\footnotesize\ttfamily def robot\+\_\+states.\+Robot\+State.\+get\+\_\+pose (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}    The ``state/get_pose`` service implementation.
+    The ``request`` input parameter is given by the client as empty. Thus, it is not used.
+    The ``response`` returned to the client contains the current robot pose.
+
+    Args:
+request(GetPoseRequest)
+    
+    Returns:
+response(GetPoseResponse)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classrobot__states_1_1_robot_state_ab77b6ffea0224311a5d2f4ba5a3d348f}\label{classrobot__states_1_1_robot_state_ab77b6ffea0224311a5d2f4ba5a3d348f}} 
+\index{robot\_states.RobotState@{robot\_states.RobotState}!odom\_callback@{odom\_callback}}
+\index{odom\_callback@{odom\_callback}!robot\_states.RobotState@{robot\_states.RobotState}}
+\doxysubsubsection{\texorpdfstring{odom\_callback()}{odom\_callback()}}
+{\footnotesize\ttfamily def robot\+\_\+states.\+Robot\+State.\+odom\+\_\+callback (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{data }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}    Odometry callback function useful to subscribe ``/odom`` topic, update robot current pose in *robot_sates.py*
+    Args:
+data(nav_msgs.msg.Odometry)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classrobot__states_1_1_robot_state_a61dc95746c214504aa967792d6ee13b4}\label{classrobot__states_1_1_robot_state_a61dc95746c214504aa967792d6ee13b4}} 
+\index{robot\_states.RobotState@{robot\_states.RobotState}!set\_base\_movement\_state@{set\_base\_movement\_state}}
+\index{set\_base\_movement\_state@{set\_base\_movement\_state}!robot\_states.RobotState@{robot\_states.RobotState}}
+\doxysubsubsection{\texorpdfstring{set\_base\_movement\_state()}{set\_base\_movement\_state()}}
+{\footnotesize\ttfamily def robot\+\_\+states.\+Robot\+State.\+set\+\_\+base\+\_\+movement\+\_\+state (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}    The `state/set_base_movement_state` service implementation.
+    The `request` input parameter is the current robot base movement state to be set,
+    as given by the client. This server returns an empty `response`.
+
+    Arg:
+request(SetBaseMovementStateRequest)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classrobot__states_1_1_robot_state_a9d666c94f6af03d229edecdfa0965746}\label{classrobot__states_1_1_robot_state_a9d666c94f6af03d229edecdfa0965746}} 
+\index{robot\_states.RobotState@{robot\_states.RobotState}!set\_battery\_level@{set\_battery\_level}}
+\index{set\_battery\_level@{set\_battery\_level}!robot\_states.RobotState@{robot\_states.RobotState}}
+\doxysubsubsection{\texorpdfstring{set\_battery\_level()}{set\_battery\_level()}}
+{\footnotesize\ttfamily def robot\+\_\+states.\+Robot\+State.\+set\+\_\+battery\+\_\+level (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}    The `state/set_battery_level` service implementation.
+    The `request` input parameter is the current robot battery level to be set,
+    as given by the client. This server returns an empty `response`.
+
+    Arg:
+request(SetBatteryLevelRequest)
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scripts/robot\+\_\+states.\+py\end{DoxyCompactItemize}
