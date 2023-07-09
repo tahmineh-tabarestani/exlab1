@@ -1,0 +1,65 @@
+\hypertarget{classcontroller_1_1_controlling_action}{}\doxysection{controller.\+Controlling\+Action Class Reference}
+\label{classcontroller_1_1_controlling_action}\index{controller.ControllingAction@{controller.ControllingAction}}
+
+
+Inheritance diagram for controller.\+Controlling\+Action\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{classcontroller_1_1_controlling_action__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for controller.\+Controlling\+Action\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{classcontroller_1_1_controlling_action__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcontroller_1_1_controlling_action_a864137ca73531e2771504c4c95d92713}\label{classcontroller_1_1_controlling_action_a864137ca73531e2771504c4c95d92713}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+def \mbox{\hyperlink{classcontroller_1_1_controlling_action_aab54964f603544e46a4620b3f71dcc2a}{execute\+\_\+callback}} (self, goal)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcontroller_1_1_controlling_action_a6532d245dcd95c94afb11b1cc9d2be21}\label{classcontroller_1_1_controlling_action_a6532d245dcd95c94afb11b1cc9d2be21}} 
+{\bfseries \+\_\+as}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This class has:
+    1. An SimpleActionServer to simulate motion controlling.
+    2. Given a plan as a set of via points, it simulate the movements to reach each point. 
+    3. This server updatesthe current robot position stored in the `robot-state` node.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcontroller_1_1_controlling_action_aab54964f603544e46a4620b3f71dcc2a}\label{classcontroller_1_1_controlling_action_aab54964f603544e46a4620b3f71dcc2a}} 
+\index{controller.ControllingAction@{controller.ControllingAction}!execute\_callback@{execute\_callback}}
+\index{execute\_callback@{execute\_callback}!controller.ControllingAction@{controller.ControllingAction}}
+\doxysubsubsection{\texorpdfstring{execute\_callback()}{execute\_callback()}}
+{\footnotesize\ttfamily def controller.\+Controlling\+Action.\+execute\+\_\+callback (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{goal }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function does:
+    1. The callback invoked when a client set a goal to the `controller` server.
+    2. Requires a list of via points (i.e., the plan), and it simulate a movement through each point. 
+    3. The related robot position is updated in the `robot-state` node.
+
+Arg:
+    goal(float): [x,y] coordinates of next destination of robot\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scripts/controller.\+py\end{DoxyCompactItemize}

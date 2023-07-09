@@ -1,0 +1,57 @@
+\hypertarget{namespacecontroller}{}\doxysection{controller Namespace Reference}
+\label{namespacecontroller}\index{controller@{controller}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classcontroller_1_1_controlling_action}{Controlling\+Action}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacecontroller_a4f11f20722cfe5fc65db9f55b1d84aad}{\+\_\+set\+\_\+pose\+\_\+client}} (pose)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacecontroller_a4fc1b6a99bc87906a47c7cad719ccb74}\label{namespacecontroller_a4fc1b6a99bc87906a47c7cad719ccb74}} 
+{\bfseries L\+O\+G\+\_\+\+T\+AG} = anm.\+N\+O\+D\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+L\+ER
+\item 
+\mbox{\Hypertarget{namespacecontroller_a99a847a8cdf1284e51872a5704e85411}\label{namespacecontroller_a99a847a8cdf1284e51872a5704e85411}} 
+{\bfseries N\+O\+D\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+L\+ER}
+\item 
+\mbox{\Hypertarget{namespacecontroller_a65f5ca619d887ed3eea896dd96035444}\label{namespacecontroller_a65f5ca619d887ed3eea896dd96035444}} 
+{\bfseries log\+\_\+level}
+\item 
+\mbox{\Hypertarget{namespacecontroller_af7ece586506b0ed00fa2d33f4102566e}\label{namespacecontroller_af7ece586506b0ed00fa2d33f4102566e}} 
+{\bfseries server} = \mbox{\hyperlink{classcontroller_1_1_controlling_action}{Controlling\+Action}}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}.. module:: controller
+    :platform: Unix
+    :synopsis: the controller python script in topological_map_robot_control package
+    
+.. moduleauthor:: Tahmineh Tabarestani <Tahmineh.tbi@gmail.com>
+
+This node sets the client pose by utilizing the "anm.SERVER_SET_POSE" service and employs the execute callback to generate feedback while iterating through each set of points.
+
+Service:
+The SET_POSE service is employed to adjust the robot's position, utilizing the 'robot_state' node.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacecontroller_a4f11f20722cfe5fc65db9f55b1d84aad}\label{namespacecontroller_a4f11f20722cfe5fc65db9f55b1d84aad}} 
+\index{controller@{controller}!\_set\_pose\_client@{\_set\_pose\_client}}
+\index{\_set\_pose\_client@{\_set\_pose\_client}!controller@{controller}}
+\doxysubsubsection{\texorpdfstring{\_set\_pose\_client()}{\_set\_pose\_client()}}
+{\footnotesize\ttfamily def controller.\+\_\+set\+\_\+pose\+\_\+client (\begin{DoxyParamCaption}\item[{}]{pose }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyVerb}A simple function to update the current robot `pose` stored in the `robot-state` node.
+This method is performed for each point provided in the action's server feedback.
+
+Arg:
+    pose(float): [x,y] coordinates of current position 
+\end{DoxyVerb}
+ 

@@ -1,0 +1,70 @@
+\hypertarget{classrobot__states_1_1_robot_state}{}\doxysection{robot\+\_\+states.\+Robot\+State Class Reference}
+\label{classrobot__states_1_1_robot_state}\index{robot\_states.RobotState@{robot\_states.RobotState}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrobot__states_1_1_robot_state_af915ba84f14daac9b0aaa87cec6e62b2}\label{classrobot__states_1_1_robot_state_af915ba84f14daac9b0aaa87cec6e62b2}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+def \mbox{\hyperlink{classrobot__states_1_1_robot_state_abfd8335889b8cb8aff179324e54bf326}{set\+\_\+pose}} (self, request)
+\item 
+def \mbox{\hyperlink{classrobot__states_1_1_robot_state_a76199309686fac776fe4427a8e549264}{get\+\_\+pose}} (self, request)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrobot__states_1_1_robot_state_ae5dcf6e3a89f04850bb0c6c9751cb190}\label{classrobot__states_1_1_robot_state_ae5dcf6e3a89f04850bb0c6c9751cb190}} 
+def {\bfseries \+\_\+print\+\_\+info} (self, msg)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrobot__states_1_1_robot_state_a0894b6337f559998dbcab19f0343f20e}\label{classrobot__states_1_1_robot_state_a0894b6337f559998dbcab19f0343f20e}} 
+{\bfseries \+\_\+pose}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The node manager class:
+    This class defines two services to get and set the current robot pose and next robot pose.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrobot__states_1_1_robot_state_a76199309686fac776fe4427a8e549264}\label{classrobot__states_1_1_robot_state_a76199309686fac776fe4427a8e549264}} 
+\index{robot\_states.RobotState@{robot\_states.RobotState}!get\_pose@{get\_pose}}
+\index{get\_pose@{get\_pose}!robot\_states.RobotState@{robot\_states.RobotState}}
+\doxysubsubsection{\texorpdfstring{get\_pose()}{get\_pose()}}
+{\footnotesize\ttfamily def robot\+\_\+states.\+Robot\+State.\+get\+\_\+pose (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function is the `robot/get_pose` service implementation.
+The `request` input parameter is given by the client as empty. Thus, it is not used.
+The `response` returned to the client contains the current robot pose.
+
+Args:
+    request (float): [x,y] coordinates of client pose
+
+Returns:
+    float: get position response
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classrobot__states_1_1_robot_state_abfd8335889b8cb8aff179324e54bf326}\label{classrobot__states_1_1_robot_state_abfd8335889b8cb8aff179324e54bf326}} 
+\index{robot\_states.RobotState@{robot\_states.RobotState}!set\_pose@{set\_pose}}
+\index{set\_pose@{set\_pose}!robot\_states.RobotState@{robot\_states.RobotState}}
+\doxysubsubsection{\texorpdfstring{set\_pose()}{set\_pose()}}
+{\footnotesize\ttfamily def robot\+\_\+states.\+Robot\+State.\+set\+\_\+pose (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function is the `robot/set_pose` service implementation.
+The `request` input parameter is the current robot pose to be set,
+as given by the client. This server returns an empty `response`.
+
+Args:
+    request (float): [x,y] coordinates of client pose
+
+Returns:
+    float: set postion response
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scripts/robot\+\_\+states.\+py\end{DoxyCompactItemize}

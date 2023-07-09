@@ -1,0 +1,62 @@
+\hypertarget{namespaceplanner}{}\doxysection{planner Namespace Reference}
+\label{namespaceplanner}\index{planner@{planner}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classplanner_1_1_planing_action}{Planing\+Action}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespaceplanner_a4224bdd003d20afca4f05cc20c355d65}{\+\_\+get\+\_\+pose\+\_\+client}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespaceplanner_a4209f7309acdbba1a84f1587681dfec0}\label{namespaceplanner_a4209f7309acdbba1a84f1587681dfec0}} 
+{\bfseries L\+O\+G\+\_\+\+T\+AG} = anm.\+N\+O\+D\+E\+\_\+\+P\+L\+A\+N\+N\+ER
+\item 
+\mbox{\Hypertarget{namespaceplanner_aff8e189f86f74f8aaf3351cbb7356409}\label{namespaceplanner_aff8e189f86f74f8aaf3351cbb7356409}} 
+{\bfseries N\+O\+D\+E\+\_\+\+P\+L\+A\+N\+N\+ER}
+\item 
+\mbox{\Hypertarget{namespaceplanner_ab554f56ade44b42d452d34ab0f92591d}\label{namespaceplanner_ab554f56ade44b42d452d34ab0f92591d}} 
+{\bfseries log\+\_\+level}
+\item 
+\mbox{\Hypertarget{namespaceplanner_aaba81fa6983b3c1cd69468b3659420e6}\label{namespaceplanner_aaba81fa6983b3c1cd69468b3659420e6}} 
+{\bfseries server} = \mbox{\hyperlink{classplanner_1_1_planing_action}{Planing\+Action}}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}.. module:: planner
+    :platform: Unix
+    :synopsis: the controller_ python script in topological_map_robot_control package
+    
+.. moduleauthor:: Tahmineh Tabarestani <Tahmineh.tbi@gmail.com>
+
+Brief explanation of this node:
+    Get client pose to anm.SERVER_GET_POSE service and use execute callback to 
+    construct the feedback and loop for each set of points.
+
+Service:
+    GET_POSE to get position from 'robot_state' node
+
+Param:
+Get PLANNER_POINTS
+Get ENVIRONMENT_SIZE 
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceplanner_a4224bdd003d20afca4f05cc20c355d65}\label{namespaceplanner_a4224bdd003d20afca4f05cc20c355d65}} 
+\index{planner@{planner}!\_get\_pose\_client@{\_get\_pose\_client}}
+\index{\_get\_pose\_client@{\_get\_pose\_client}!planner@{planner}}
+\doxysubsubsection{\texorpdfstring{\_get\_pose\_client()}{\_get\_pose\_client()}}
+{\footnotesize\ttfamily def planner.\+\_\+get\+\_\+pose\+\_\+client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyVerb}This function retrieve the current robot pose by the `state/get_pose` server of the `robot-state` node.
+
+Returns:
+    msg: pose of client
+\end{DoxyVerb}
+ 

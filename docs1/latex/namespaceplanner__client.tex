@@ -1,0 +1,78 @@
+\hypertarget{namespaceplanner__client}{}\doxysection{planner\+\_\+client Namespace Reference}
+\label{namespaceplanner__client}\index{planner\_client@{planner\_client}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespaceplanner__client_aadfbc442bf3af58ffad47c711e76b78e}{planner\+\_\+client\+\_\+callback}} (data)
+\item 
+def \mbox{\hyperlink{namespaceplanner__client_adac57d853c27a319c6296ba6a564a58f}{planner\+\_\+client}} (x, y)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespaceplanner__client_ac9406feffc760a92d719267301801a7d}\label{namespaceplanner__client_ac9406feffc760a92d719267301801a7d}} 
+{\bfseries L\+O\+G\+\_\+\+T\+AG} = anm.\+N\+O\+D\+E\+\_\+\+P\+L\+A\+N\+N\+E\+R\+\_\+\+C\+L\+I\+E\+NT
+\item 
+\mbox{\Hypertarget{namespaceplanner__client_a307201bd12819d32eb601a76336d08ac}\label{namespaceplanner__client_a307201bd12819d32eb601a76336d08ac}} 
+{\bfseries N\+O\+D\+E\+\_\+\+P\+L\+A\+N\+N\+E\+R\+\_\+\+C\+L\+I\+E\+NT}
+\item 
+\mbox{\Hypertarget{namespaceplanner__client_a89c606921ff3ad0d5c381d4531367e6f}\label{namespaceplanner__client_a89c606921ff3ad0d5c381d4531367e6f}} 
+{\bfseries log\+\_\+level}
+\item 
+\mbox{\Hypertarget{namespaceplanner__client_ae3977d57a78efd19d5e45dc3c4020ded}\label{namespaceplanner__client_ae3977d57a78efd19d5e45dc3c4020ded}} 
+{\bfseries pub} = rospy.\+Publisher(\textquotesingle{}/path\textquotesingle{}, tmrc.\+msg.\+Plan\+Result, queue\+\_\+size=10)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}.. module:: planner_client
+    :platform: Unix
+    :synopsis: the controller_client python script in topological_map_robot_control package
+    
+.. moduleauthor:: Tahmineh Tabarestani <Tahmineh.tbi@gmail.com>
+
+Brief explanation of this node:
+    Use controller_client function to communicate with SimpleActionServer and
+    cancels goal in case of need, additionaly create an action client to send
+    plan to PlanAction. Use planner_client_callback to substitute new data.
+
+Service:
+    SET_POSE to set just inital position to 'robot_state' node
+
+
+Publishe :
+    /path to PlanResult
+
+Subscribe to:
+/target_point to PlanGoal\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceplanner__client_adac57d853c27a319c6296ba6a564a58f}\label{namespaceplanner__client_adac57d853c27a319c6296ba6a564a58f}} 
+\index{planner\_client@{planner\_client}!planner\_client@{planner\_client}}
+\index{planner\_client@{planner\_client}!planner\_client@{planner\_client}}
+\doxysubsubsection{\texorpdfstring{planner\_client()}{planner\_client()}}
+{\footnotesize\ttfamily def planner\+\_\+client.\+planner\+\_\+client (\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function it uses the SimpleActionClient to connect to server in order to send, cancel and waiting for server and
+create an action client called "planner_client" with action definition file "tmrc.msg.PlanAction"
+
+Args:
+    x (float): x-coordinate of target
+    y (float): y-coordinate of target
+
+Returns:
+    msg: get result
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceplanner__client_aadfbc442bf3af58ffad47c711e76b78e}\label{namespaceplanner__client_aadfbc442bf3af58ffad47c711e76b78e}} 
+\index{planner\_client@{planner\_client}!planner\_client\_callback@{planner\_client\_callback}}
+\index{planner\_client\_callback@{planner\_client\_callback}!planner\_client@{planner\_client}}
+\doxysubsubsection{\texorpdfstring{planner\_client\_callback()}{planner\_client\_callback()}}
+{\footnotesize\ttfamily def planner\+\_\+client.\+planner\+\_\+client\+\_\+callback (\begin{DoxyParamCaption}\item[{}]{data }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function to substitute plan result in planner client.
+
+Args:
+    data (float): [x,y] coordinates of target
+\end{DoxyVerb}
+ 

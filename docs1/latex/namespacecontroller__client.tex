@@ -1,0 +1,62 @@
+\hypertarget{namespacecontroller__client}{}\doxysection{controller\+\_\+client Namespace Reference}
+\label{namespacecontroller__client}\index{controller\_client@{controller\_client}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacecontroller__client_aaba31fe02a7b7c2f722b2d929f8871f4}{controller\+\_\+client\+\_\+callback}} (data)
+\item 
+def \mbox{\hyperlink{namespacecontroller__client_aa1072cdc6dfc3937ed3526531f518036}{controller\+\_\+client}} (goal)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacecontroller__client_a6baba095519d9d9d507537a9395420d4}\label{namespacecontroller__client_a6baba095519d9d9d507537a9395420d4}} 
+{\bfseries L\+O\+G\+\_\+\+T\+AG} = anm.\+N\+O\+D\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+L\+E\+R\+\_\+\+C\+L\+I\+E\+NT
+\item 
+\mbox{\Hypertarget{namespacecontroller__client_a48bce3bd30e6e3979c0b9cee6a253093}\label{namespacecontroller__client_a48bce3bd30e6e3979c0b9cee6a253093}} 
+{\bfseries N\+O\+D\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+L\+E\+R\+\_\+\+C\+L\+I\+E\+NT}
+\item 
+\mbox{\Hypertarget{namespacecontroller__client_a8aa34cb3dfe02274d514394a7cff33da}\label{namespacecontroller__client_a8aa34cb3dfe02274d514394a7cff33da}} 
+{\bfseries log\+\_\+level}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}.. module:: controller_client
+    :platform: Unix
+    :synopsis: the controller_client python script in topological_map_robot_control package
+    
+.. moduleauthor:: Tahmineh Tabarestani <Tahmineh.tbi@gmail.com>
+
+Brief explanation of this node:
+    This node utilizes the controller_client function to establish communication with the   SimpleActionServer and cancels the goal if necessary. Additionally, it creates an       action client to send a goal to the ControlAction. The controller_client_callback       function is utilized to update the data.
+
+Subscribe to:
+ "/path" topic to receive the result from the controller_client_callback function.\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacecontroller__client_aa1072cdc6dfc3937ed3526531f518036}\label{namespacecontroller__client_aa1072cdc6dfc3937ed3526531f518036}} 
+\index{controller\_client@{controller\_client}!controller\_client@{controller\_client}}
+\index{controller\_client@{controller\_client}!controller\_client@{controller\_client}}
+\doxysubsubsection{\texorpdfstring{controller\_client()}{controller\_client()}}
+{\footnotesize\ttfamily def controller\+\_\+client.\+controller\+\_\+client (\begin{DoxyParamCaption}\item[{}]{goal }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function it uses the SimpleActionClient to connect to server in order to send, cancel and waiting for server and
+create an action client called "planner_client" with action definition file "tmrc.msg.ControlAction"
+
+Arg:
+    goal(float)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacecontroller__client_aaba31fe02a7b7c2f722b2d929f8871f4}\label{namespacecontroller__client_aaba31fe02a7b7c2f722b2d929f8871f4}} 
+\index{controller\_client@{controller\_client}!controller\_client\_callback@{controller\_client\_callback}}
+\index{controller\_client\_callback@{controller\_client\_callback}!controller\_client@{controller\_client}}
+\doxysubsubsection{\texorpdfstring{controller\_client\_callback()}{controller\_client\_callback()}}
+{\footnotesize\ttfamily def controller\+\_\+client.\+controller\+\_\+client\+\_\+callback (\begin{DoxyParamCaption}\item[{}]{data }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function to substitute control result in controller client.
+
+Arg:
+    data(float): coordinates of target room
+\end{DoxyVerb}
+ 

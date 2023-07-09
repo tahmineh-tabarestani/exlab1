@@ -1,0 +1,71 @@
+\hypertarget{classplanner_1_1_planing_action}{}\doxysection{planner.\+Planing\+Action Class Reference}
+\label{classplanner_1_1_planing_action}\index{planner.PlaningAction@{planner.PlaningAction}}
+
+
+Inheritance diagram for planner.\+Planing\+Action\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{classplanner_1_1_planing_action__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for planner.\+Planing\+Action\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{classplanner_1_1_planing_action__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classplanner_1_1_planing_action_af3b94d2fa34123aeda578226fb2bdc75}\label{classplanner_1_1_planing_action_af3b94d2fa34123aeda578226fb2bdc75}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+def \mbox{\hyperlink{classplanner_1_1_planing_action_aa6888e4c453bb5cc76726cb904eb97a4}{execute\+\_\+callback}} (self, goal)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classplanner_1_1_planing_action_a09a7993cfb9ec77324b104fc94c7b74f}\label{classplanner_1_1_planing_action_a09a7993cfb9ec77324b104fc94c7b74f}} 
+{\bfseries \+\_\+plan\+\_\+points}
+\item 
+\mbox{\Hypertarget{classplanner_1_1_planing_action_abfc07f58920241e7bb357564e2af5226}\label{classplanner_1_1_planing_action_abfc07f58920241e7bb357564e2af5226}} 
+{\bfseries \+\_\+environment\+\_\+size}
+\item 
+\mbox{\Hypertarget{classplanner_1_1_planing_action_a398fbf9a9a18a16e70d9830bd12d4916}\label{classplanner_1_1_planing_action_a398fbf9a9a18a16e70d9830bd12d4916}} 
+{\bfseries \+\_\+as}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This class has:
+    1. An action server to simulate motion planning.
+    2. Given a target position, it retrieve the current robot position from the `robot-state` 
+    node, and return a plan as a set of via points.\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classplanner_1_1_planing_action_aa6888e4c453bb5cc76726cb904eb97a4}\label{classplanner_1_1_planing_action_aa6888e4c453bb5cc76726cb904eb97a4}} 
+\index{planner.PlaningAction@{planner.PlaningAction}!execute\_callback@{execute\_callback}}
+\index{execute\_callback@{execute\_callback}!planner.PlaningAction@{planner.PlaningAction}}
+\doxysubsubsection{\texorpdfstring{execute\_callback()}{execute\_callback()}}
+{\footnotesize\ttfamily def planner.\+Planing\+Action.\+execute\+\_\+callback (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{goal }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function does:
+    1. The callback invoked when a client set a goal to the `planner` server.
+    2.  Will return a list of points (i.e., the plan) when the fist point is 
+the current robot position (retrieved from the `robot-state` node), while 
+the last point is the `goal` position (given as input parameter).
+Args:
+    goal (float): target position of robot
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+scripts/planner.\+py\end{DoxyCompactItemize}
